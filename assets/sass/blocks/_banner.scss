@@ -1,0 +1,86 @@
+.banner{
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    border-radius: 42px;
+    margin: 0 auto 30px auto;
+    padding: 0 12px;
+    @media (min-width:1200px) {
+        max-width: 1200px;
+        justify-content: space-between;
+        padding-left: 90px;
+    }
+
+    &__text{
+        position: relative;
+        max-width: 300px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+      
+       
+        &__icon{
+            max-width: 130px;
+            position: relative;
+            &__a{
+                background-color: #5124c4;
+                width: 130px;
+                color: white;
+                font-weight: bolder;
+                font-size: large;
+                padding: 0.7rem 0.5rem;
+                border-radius: 54px;
+            }
+            &__arrow{
+                position: absolute;
+                top: 7px;
+                left: 11px;
+            }
+        }
+    }
+    &__image{
+        display: none;
+        @media (min-width:1200px) {
+           max-width: 600px;
+            display: flex;
+            padding: 20px 0;
+            overflow: hidden;
+        }
+        &__two{
+            display: none;
+            @media (min-width:1200px) {
+                display: flex;
+                position: absolute;
+                top: 25%;
+                left: 35%;
+            }
+        }
+        &__three{
+            display: none;
+            @media (min-width:1200px) {
+                display: flex;
+                position: absolute;
+                top: 13%;
+                left: 35%;
+                font-weight: bolder;
+                font-size: xx-large;
+            }
+        }
+        &__four{
+            display: none;
+            @media (min-width:1200px) {
+                display: flex;
+                position: absolute;
+                top: 13%;
+                left: 35%;
+            }
+        }
+    }
+}

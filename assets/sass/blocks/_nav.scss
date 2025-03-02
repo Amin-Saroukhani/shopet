@@ -1,0 +1,50 @@
+.nav {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto 20px auto;
+    padding: 0 0.5rem;
+
+
+    @media (min-width:1200px) {
+        max-width: 1200px;
+    }
+    &__a{
+        font-weight: bolder;
+    }
+    &__a:hover{
+        color: $color-primary-500;
+    }
+    &__icon {
+        @media (min-width:1200px) {
+            display: none;
+        }
+    }
+
+    &__elemans {
+        display: none;
+
+        @media (min-width:1200px) {
+            display: flex;
+            gap: 2rem;
+        }
+    }
+
+    &__phone {
+        display: flex;
+        gap: 8px;
+        align-items: center;
+
+        &__text {
+            font-weight: bolder;
+            font-size: large;
+        }
+
+        &__number {
+            color: $color-primary-500;
+            font-weight: bold;
+
+        }
+    }
+}

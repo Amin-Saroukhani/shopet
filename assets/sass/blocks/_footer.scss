@@ -1,0 +1,72 @@
+.footer {
+    width: 100%;
+    padding: 20px 8px;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: 40px;
+
+    &__content {
+        width: 100%;
+        max-width: 1000px;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 0 12px;
+        gap: 1.5rem;
+
+        &__1 {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            max-width: 200px;
+            &__a{
+                color: gray;
+                font-weight: bolder;
+            }
+            &__a:hover{
+                color: $color-primary-500;
+            }
+        }
+
+        &__2 {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            max-width: 300px;
+
+            &__about {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                &__phone {
+                    display: flex;
+                    align-items: center;
+                    gap: 0.5rem;
+                }
+
+                &__number {
+                    color: $color-primary-500;
+                    font-weight: bolder;
+                    font-size: larger;
+                }
+            }
+
+            &__shope {
+                display: flex;
+                gap: 1.5rem;
+                align-items: center;
+
+                &__p {
+                    font-size: larger;
+                    font-weight: bolder;
+                    color: $color-primary-500;
+                }
+            }
+        }
+
+    }
+}

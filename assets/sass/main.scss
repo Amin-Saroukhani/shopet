@@ -1,0 +1,17 @@
+//shered
+@import "./shared/variables";
+@import "./shared/normalize";
+@import "./shared/mixins";
+
+//bloks
+@import "blocks/header";
+@import  "blocks/offer";
+@import "blocks/nav";
+@import "blocks/banner";
+@import "blocks/Typesfood";
+@import "blocks/product";
+@import "blocks/special_product";
+@import "blocks/product_food";
+@import "blocks/more_product";
+@import "blocks/blog";
+@import "blocks/footer";

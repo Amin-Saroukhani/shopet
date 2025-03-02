@@ -1,0 +1,109 @@
+.typesfood{
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 0 auto 30px auto;
+    @media (min-width:1200px) {
+        max-width: 1200px;
+        flex-direction: row;
+    }
+    &__fish{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #f8f6fd;
+        border-radius: 19px;
+        max-width: 500px;
+        padding: 0 10px;
+        margin: 0 auto;
+        &__img{
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            &__p{
+                font-weight: bolder;
+                font-size: large;
+            }
+        }
+    }
+    &__fish:hover{
+        border: 2px dotted $color-primary-500;
+    }
+    &__cat{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #f5fcff;
+        border-radius: 19px;
+        max-width: 500px;
+        padding: 0 10px;
+        margin: 0 auto;
+        &__img{
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            &__p{
+                font-weight: bolder;
+                font-size: large;
+            }
+        }
+    }
+    &__cat:hover{
+        border: 2px dotted $color-primary-500;
+    }
+    &__dog{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #feede6;
+        border-radius: 19px;
+        max-width: 500px;
+        padding: 0 10px;
+        margin: 0 auto;
+        &__img{
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            &__p{
+                font-weight: bolder;
+                font-size: large;
+            }
+        }
+    }
+    &__dog:hover{
+        border: 2px dotted $color-primary-500;
+    }
+   
+}
+.product__text{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto 30px auto;
+    text-align: center;
+    @media (min-width:1200px) {
+        max-width: 1200px;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    &__p{
+        font-weight: bolder;
+        font-size: x-large;
+    }
+    &__a{
+        font-weight: bold;
+        font-size: x-large;
+        color: $color-primary-500;
+        @media (min-width:1200px) {
+            font-weight: bolder;
+            font-size: x-large;
+        }
+    }
+}
