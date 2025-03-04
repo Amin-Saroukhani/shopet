@@ -2,63 +2,76 @@
     display: flex;
     flex-direction: column;
     flex-direction: column-reverse;
-    gap: 1rem;
+    gap: $spc-40;
     align-items: center;
-    max-width: 600px;
-    margin: 0 auto 20px auto;
+    max-width: $brp-20;
+    margin: 0 auto $spc-50 auto;
     padding: 0 $spc-20;
-    @media (min-width:1200px) {
+
+    @media (min-width:$brp-30) {
         flex-direction: row;
         justify-content: space-between;
-        max-width: 1200px;
+        max-width: $brp-30;
     }
-    &__user{
+
+    &__user {
         display: flex;
         gap: 1rem;
-        @media (min-width:1200px) {
+
+        @media (min-width:$brp-30) {
             display: flex;
-            gap: 45px;
+            gap: $spc-85;
         }
     }
-    &__option{
+
+    &__option {
         display: none;
-        @media (min-width:1200px) {
+
+        @media (min-width:$brp-30) {
             display: flex;
-            gap: 60px;
+            gap: $spc-95;
         }
-        &__one{
+
+        &__one {
             display: flex;
             gap: $spc-20;
             align-items: center;
         }
-        &__text{
-            &__two{
+
+        &__text {
+            &__two {
                 color: gray;
                 font-size: smaller;
             }
         }
     }
-    &__menus{
+
+    &__menus {
         display: flex;
         align-items: center;
         gap: $spc-20;
-        &__hamburges{
-            @media(min-width:1200px) {
+
+        &__hamburges {
+            @media(min-width:$brp-30) {
                 display: none;
             }
         }
-        &__icon{
+
+        &__icon {
             display: none;
-            @media (min-width:1200px) {
+
+            @media (min-width:$brp-30) {
                 display: flex;
             }
         }
-        &__p{
+
+        &__p {
             font-size: x-large;
             color: $color-primary-500;
             font-weight: bolder;
             display: none;
-            @media (min-width:1200px) {
+
+            @media (min-width:$brp-30) {
                 display: flex;
             }
         }
@@ -69,22 +82,24 @@
         width: 100%;
         margin: 0 auto;
         position: relative;
-        @media (min-width:1200px) {
-            max-width: 400px;
+
+        @media (min-width:$brp-30) {
+            max-width: $brp-10;
             margin: 0 0;
         }
-        
+
 
         &__input {
             width: 100%;
-            padding: 12px $spc-50;
+            padding: $spc-30 $spc-50;
             border-radius: 50px;
             background-color: #F2F2F2;
             border: none;
 
         }
-        &__icon{
-            background-color:#5124c4;
+
+        &__icon {
+            background-color: #5124c4;
             position: absolute;
             top: 10%;
             left: 4%;

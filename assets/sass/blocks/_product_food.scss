@@ -1,122 +1,131 @@
-.productf{
+.productf {
     width: 100%;
-    max-width: 1200px;
-    gap: 0.5rem;
+    max-width: $brp-30;
+    gap: $spc-20;
     display: flex;
     flex-wrap: wrap;
-    margin: 0 auto 60px auto;
-    padding: 0 8px;
-    &__card2{
-        width: 290px;
+    margin: 0 auto $spc-95 auto;
+    padding: 0 $spc-20;
+
+    &__card2 {
         display: flex;
         flex-direction: column;
-        padding: 40px 50px;
-        gap: 1rem;
-        background-color:#648958;
-        border-radius: 25px;
+        padding: $spc-85 $spc-100;
+        gap: $spc-80;
+        background-color: #648958;
+        border-radius: $spc-60;
         position: relative;
         overflow: hidden;
-        height: 370px;
+        height: $brp-8;
         margin: 0 auto;
     }
-    &__card3{
-        width: 290px;
+
+    &__card3 {
         display: flex;
         flex-direction: column;
-        padding: 40px 50px;
-        gap: 1rem;
-        background-color:#EC8A3C;
-        border-radius: 25px;
+        padding: $spc-85 $spc-100;
+        gap: $spc-80;
+        background-color: #EC8A3C;
+        border-radius: $spc-60;
         position: relative;
         overflow: hidden;
-        height: 370px;
+        height: $brp-8;
         margin: 0 auto;
     }
-    &__card4{
-        width: 290px;
+
+    &__card4 {
         display: flex;
         flex-direction: column;
-        padding: 40px 50px;
-        gap: 1rem;
-        background-color:#AF56C6;
-        border-radius: 25px;
+        padding: $spc-85 50px;
+        gap: $spc-80;
+        background-color: #AF56C6;
+        border-radius: $spc-60;
         position: relative;
         overflow: hidden;
-        height: 370px;
+        height: $brp-8;
         margin: 0 auto;
     }
-    &__card{
-        width: 290px;
+
+    &__card {
         display: flex;
         flex-direction: column;
-        padding: 40px 50px;
-        gap: 1rem;
+        padding: $spc-85 50px;
+        gap: $spc-80;
         background-color: #FF9AB3;
-        border-radius: 25px;
+        border-radius: $spc-60;
         position: relative;
         overflow: hidden;
-        height: 370px;
+        height: $brp-8;
         margin: 0 auto;
-        &__h4{
+
+        &__h4 {
             color: white;
         }
-        &__button{
+
+        &__button {
             display: flex;
-            align-items: center; 
-            gap: 0.5rem;
+            align-items: center;
+            gap: $spc-20;
             background-color: #E77291;
-            padding: 4px 6px;
-            width: 100px;
-            border-radius: 12px;
+            padding: $spc-10 $spc-15;
+            max-width: $spc-165;
+            border-radius: $spc-30;
             color: white;
-            
+
         }
-        &__button2{
+
+        &__button2 {
             display: flex;
-            align-items: center; 
-            gap: 0.5rem;
-            background-color:#88BD88;
-            padding: 4px 6px;
-            width: 100px;
-            border-radius: 12px;
+            align-items: center;
+            gap: $spc-20;
+            background-color: #88BD88;
+            padding: $spc-10 $spc-15;
+            max-width: $spc-165;
+            border-radius: $spc-30;
             color: white;
         }
-        &__button3{
+
+        &__button3 {
             display: flex;
-            align-items: center; 
-            gap: 0.5rem;
-            background-color:#CC6513;
-            padding: 4px 6px;
-            width: 100px;
-            border-radius: 12px;
+            align-items: center;
+            gap: $spc-20;
+            background-color: #CC6513;
+            padding: $spc-10 $spc-15;
+            max-width: $spc-165;
+            border-radius: $spc-30;
             color: white;
         }
-        &__button4{
+
+        &__button4 {
             display: flex;
-            align-items: center; 
-            gap: 0.5rem;
-            background-color:#D086E3;
-            padding: 4px 6px;
-            width: 100px;
-            border-radius: 12px;
+            align-items: center;
+            gap: $spc-20;
+            background-color: #D086E3;
+            padding: $spc-10 $spc-15;
+            max-width: $spc-165;
+            border-radius: $spc-30;
             color: white;
         }
-        &__img{
+
+        &__img {
             display: flex;
             flex-direction: column;
-            &__1{
+
+            &__1 {
                 position: absolute;
                 top: 35%;
                 left: 40%;
                 z-index: 4;
             }
-            &__2{
+
+            &__2 {
                 position: absolute;
                 top: 58%;
                 left: 31%;
                 z-index: 0;
             }
-            &__3{
+
+            &__3 {
                 position: absolute;
                 top: 59%;
                 left: 34%;
@@ -125,15 +134,17 @@
         }
 
     }
-   
+
 }
-.productf__card__img__11{
+
+.productf__card__img__11 {
     position: absolute;
     top: 40%;
     left: 40%;
     z-index: 4;
 }
-.productf__card__img__111{
+
+.productf__card__img__111 {
     position: absolute;
     top: 43%;
     left: 34%;

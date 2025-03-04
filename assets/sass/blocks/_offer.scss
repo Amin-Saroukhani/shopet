@@ -1,20 +1,22 @@
-.offer{
-    margin-bottom: $spc-20;
+.offer {
     width: 100%;
     background-color: $color-primary-500;
     padding: $spc-20;
-    @include flex(center , center , row , wrap , $spc-20);
-    &__Percentage{
+    margin: 0 auto $spc-20 auto;
+    @include flex(center, center, row, wrap, $spc-20);
+
+    &__Percentage {
         background-color: white;
         border-radius: $spc-80;
         padding-right: $spc-30;
         padding-left: $spc-30;
         padding-top: $spc-5;
-        padding-bottom:$spc-5;
+        padding-bottom: $spc-5;
         color: $color-primary-500;
         font-weight: bolder;
     }
-    &__allproduct{
+
+    &__allproduct {
         color: white;
     }
 }

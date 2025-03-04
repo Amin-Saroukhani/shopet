@@ -1,70 +1,79 @@
-.banner{
+.banner {
     position: relative;
     width: 100%;
-    max-width: 800px;
-    height: 400px;
+    max-width: $brp-25;
+    height: $brp-10;
     display: flex;
     align-items: center;
     margin: 0 auto;
     background-repeat: no-repeat;
-    border-radius: 42px;
-    margin: 0 auto 30px auto;
-    padding: 0 12px;
-    @media (min-width:1200px) {
-        max-width: 1200px;
+    border-radius: $spc-85;
+    margin: 0 auto $spc-80 auto;
+    padding: 0 $spc-30;
+
+    @media (min-width:$brp-30) {
+        max-width: $brp-30;
         justify-content: space-between;
-        padding-left: 90px;
+        padding-left: $spc-160;
     }
 
-    &__text{
+    &__text {
         position: relative;
-        max-width: 300px;
+        max-width: $brp-5;
         margin: 0 auto;
         display: flex;
         flex-direction: column;
-        gap: 20px;
+        gap: $spc-50;
         justify-content: center;
-      
-       
-        &__icon{
-            max-width: 130px;
+
+
+        &__icon {
+            max-width: $brp-2;
             position: relative;
-            &__a{
-                background-color: #5124c4;
-                width: 130px;
+            max-width: $brp-2;
+            background-color: #5124c4;
+            border-radius: $spc-90;
+
+            &__a {
                 color: white;
                 font-weight: bolder;
                 font-size: large;
                 padding: 0.7rem 0.5rem;
-                border-radius: 54px;
             }
-            &__arrow{
+
+            &__arrow {
                 position: absolute;
                 top: 7px;
                 left: 11px;
             }
         }
     }
-    &__image{
+
+    &__image {
         display: none;
-        @media (min-width:1200px) {
-           max-width: 600px;
+
+        @media (min-width:$brp-30) {
+            max-width: $brp-20;
             display: flex;
-            padding: 20px 0;
+            padding: $spc-50 0;
             overflow: hidden;
         }
-        &__two{
+
+        &__two {
             display: none;
-            @media (min-width:1200px) {
+
+            @media (min-width:$brp-30) {
                 display: flex;
                 position: absolute;
                 top: 25%;
                 left: 35%;
             }
         }
-        &__three{
+
+        &__three {
             display: none;
-            @media (min-width:1200px) {
+
+            @media (min-width:$brp-30) {
                 display: flex;
                 position: absolute;
                 top: 13%;
@@ -73,9 +82,11 @@
                 font-size: xx-large;
             }
         }
-        &__four{
+
+        &__four {
             display: none;
-            @media (min-width:1200px) {
+
+            @media (min-width:$brp-30) {
                 display: flex;
                 position: absolute;
                 top: 13%;

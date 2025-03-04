@@ -1,67 +1,78 @@
-.specialp{
+.specialp {
     width: 100%;
-    max-width: 1200px;
+    max-width: $brp-30;
     display: flex;
     flex-direction: column;
-    margin: 0 auto 40px auto;
+    margin: 0 auto $spc-85 auto;
     align-items: center;
-    gap: 1rem;
-    background: linear-gradient( #3EA6DD, #41BDFF);
+    gap: $spc-40;
+    background: linear-gradient(#3EA6DD, #41BDFF);
     padding: 10px 30px;
-    border-radius: 14px;
+    border-radius: $spc-40;
     position: relative;
-    @media (min-width:1200px) {
+
+    @media (min-width:$brp-30) {
         flex-direction: row;
         padding: 30px 30px;
     }
-    &__h2{
+
+    &__h2 {
         color: white;
         text-align: center;
     }
-    &__button{
+
+    &__button {
         display: flex;
         align-items: center;
-        gap: 0.5rem;
+        gap: $spc-20;
         background-color: white;
-        color:$color-primary-500;
+        color: $color-primary-500;
         font-weight: bolder;
         font-size: large;
-        padding: 2px 12px;
-        border-radius: 14px;
+        padding: $spc-5 $spc-30;
+        border-radius: $spc-30;
+
         &:hover {
             background: linear-gradient(135deg, #41BDFF, #F7763D);
             color: white;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); 
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
         }
-    
+
 
     }
-    &__img{
+
+    &__img {
         display: none;
+
         @media (min-width:1200px) {
             display: flex;
         }
-        &__1{
+
+        &__1 {
             position: absolute;
             top: 0%;
             left: 20%;
         }
-        &__2{
+
+        &__2 {
             position: absolute;
             top: -40%;
             left: 8%;
         }
-        &__3{
+
+        &__3 {
             position: absolute;
             top: -15%;
             left: 35%;
         }
-        &__4{
+
+        &__4 {
             position: absolute;
             top: 15%;
             left: 2%;
         }
-        &__5{
+
+        &__5 {
             position: absolute;
             top: 45%;
             left: 8%;

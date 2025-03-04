@@ -1,56 +1,64 @@
-.blog{
+.blog {
     width: 100%;
-    max-width: 1200px;
+    max-width: $brp-30;
     display: flex;
     flex-wrap: wrap;
-    gap: 1rem;
-    margin: 0 auto 120px auto;
-    padding: 0 8px;
-    &__card{
+    gap: $spc-40;
+    margin: 0 auto $spc-160 auto;
+    padding: 0 $spc-20;
+
+    &__card {
         display: flex;
         flex-direction: column;
-        max-width: 350px;
-        gap: 1rem;
+        max-width: $brp-7;
+        gap: $spc-40;
         margin: 0 auto;
         position: relative;
-        &__new{
+
+
+        &__new {
             display: flex;
             flex-direction: row-reverse;
             align-items: center;
-            gap: 0.5rem;
-           position: absolute;
-           top: 2%;
-           left: 50%;
-           &__1{
-            color: white;
-            background: rgba(0, 0, 0, 0.45);
-           border-radius: 29px;
-           padding: 2px 6px;
-           }
-           &__2{
-            color: white;
-            background: rgba(0, 0, 0, 0.45);
-           border-radius: 29px;
-           padding: 2px 6px;
+            gap: $spc-20;
+            position: absolute;
+            top: 2%;
+            left: 50%;
 
-           }
+            &__1 {
+                color: white;
+                background: rgba(0, 0, 0, 0.45);
+                border-radius: $spc-80;
+                padding: $spc-5 $spc-15;
+            }
+
+            &__2 {
+                color: white;
+                background: rgba(0, 0, 0, 0.45);
+                border-radius: $spc-80;
+                padding: $spc-5 $spc-15;
+
+            }
 
         }
-        &__author{
+
+        &__author {
             display: flex;
-            gap: 1rem;
+            gap: $spc-40;
             align-items: center;
-            &__1{
+
+            &__1 {
                 display: flex;
                 align-items: center;
                 flex-direction: row-reverse;
-                gap: 4px;
+                gap: $spc-10;
             }
-            &__2{
+
+            &__2 {
                 display: flex;
                 align-items: center;
                 flex-direction: row-reverse;
-                gap: 4px;
+                gap: $spc-10;
             }
         }
     }

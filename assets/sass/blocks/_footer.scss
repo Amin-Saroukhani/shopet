@@ -1,32 +1,34 @@
 .footer {
     width: 100%;
-    padding: 20px 8px;
-    height: 300px;
+    padding: $spc-50 $spc-20;
+    height: $brp-5;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    margin-top: 40px;
+    margin-top: $spc-85;
 
     &__content {
         width: 100%;
-        max-width: 1000px;
+        max-width: $brp-127;
         margin: 0 auto;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        padding: 0 12px;
-        gap: 1.5rem;
+        padding: 0 $spc-30;
+        gap: $spc-60;
 
         &__1 {
             display: flex;
             flex-direction: column;
-            gap: 2rem;
-            max-width: 200px;
-            &__a{
+            gap: $spc-80;
+            max-width: $brp-3;
+
+            &__a {
                 color: gray;
                 font-weight: bolder;
             }
-            &__a:hover{
+
+            &__a:hover {
                 color: $color-primary-500;
             }
         }
@@ -34,8 +36,8 @@
         &__2 {
             display: flex;
             flex-direction: column;
-            gap: 2rem;
-            max-width: 300px;
+            gap: $spc-80;
+            max-width: $brp-5;
 
             &__about {
                 display: flex;
@@ -45,7 +47,7 @@
                 &__phone {
                     display: flex;
                     align-items: center;
-                    gap: 0.5rem;
+                    gap: $spc-20;
                 }
 
                 &__number {
@@ -57,7 +59,7 @@
 
             &__shope {
                 display: flex;
-                gap: 1.5rem;
+                gap: $spc-60;
                 align-items: center;
 
                 &__p {
